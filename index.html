@@ -9,7 +9,7 @@
 
 
 window.addEventListener("load", () => {
-
+try{
 const button = document.getElementById("button");
 
 button.addEventListener("click", () => {
@@ -20,6 +20,10 @@ console.log(navigator.vibrate(100))
 
   document.getElementById("text").style.display = "block";
 })
+}catch(e) {
+    alert(e)
+
+}
 })
 
     </script>
