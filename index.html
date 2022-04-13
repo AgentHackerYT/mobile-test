@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exit</title>
+    <script>
+
+
+window.addEventListener("load", () => {
+
+const button = document.getElementById("button");
+
+button.addEventListener("click", () => {
+
+console.log(navigator.vibrate(100))
+
+  document.getElementById("div").style.display = "none";
+
+  document.getElementById("text").style.display = "block";
+})
+})
+
+    </script>
+    <style type="text/css">
+      body {
+        /*background-color: grey;*/
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: 100px;
+      }
+
+      h2 {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div id="div">
+        <h2>Click Exit</h2>
+        <button id="button">Click ME</button>
+      </div>
+      <h1 style="display: none;" id="text">This window will close in 3 seconds</h1>
+      <center>
+  </body>
+</html>
